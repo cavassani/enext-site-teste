@@ -281,7 +281,7 @@ p {
       .footer {
         width: 100%;
         padding-bottom: 15px;
-        margin-bottom: 1.4em;
+        /*margin-bottom: 1.4em;*/
         float: left;
         clear: both;
         background-color: #e6e6e6;
@@ -462,7 +462,7 @@ p {
    ========================================================================== */
 .overlay {
             display: none;
-            position: absolute;
+            position: fixed;
             top: 0%;
             left: 0%;
             width: 100%;
@@ -476,7 +476,7 @@ p {
 
         .content {
             display: none;
-            position: absolute;
+            position: fixed;
             top: 12%;
             left: 25%;
             width: 50%;
