@@ -40,7 +40,7 @@ Divirta-se! :)
 <div class=" clearfix ">
   <header class="header">
     <div class="header-left mobile-hide">
-      <img src="assets/img/logo.png" alt="Logo Space tours" class="logo">
+      <img src="assets/img/logo.png" alt="Logo" class="logo">
     </div>
       <div class="header-right mobile-hide">
       <div class="search">
@@ -52,11 +52,10 @@ Divirta-se! :)
       </div>
       <div class="caldron mobile-hide">
         <img  src="assets/img/caldron.png" alt="">
-      </div>
-      <div class="caldron-text mobile-hide">
-        <p class="bag-text">BAG:</p>
-        <p class="bag-qt-item">1</p>
-
+        <div class="caldron-text mobile-hide">
+          <p class="bag-text">BAG:</p>
+          <p class="bag-qt-item">1</p>
+        </div>
       </div>
     </div>
 
@@ -112,30 +111,30 @@ Divirta-se! :)
   <section class="principal">
     <h1 id="potions-main-title">Potions</p>
 
-      <div class="coluna" id="potion-1">
+      <div class="coluna" id="potion-1" data-id="1">
         <figure class="foto"><img src="assets/img/products/aging-potion.png"></figure>
         <h2>Aging Potion - <span >$29.99</span></h2>
       </div>
 
-      <div class="coluna" id="potion-2">
+      <div class="coluna" id="potion-2" data-id="2">
         <figure class="foto"><img src="assets/img/products/bulgeye-potion.png"></figure>
         <h2>Bulgeye Potion - <span >$19.99</span></h2>
       </div>
 
-      <div class="coluna" id="potion-3">
+      <div class="coluna" id="potion-3" data-id="3">
         <figure class="foto"><img src="assets/img/products/dragon-tonic.png"></figure>
         <h2>Dragon Tonic - <span >$64.99</span></h2>
       </div>
 
-      <div class="coluna" id="potion-4">
+      <div class="coluna" id="potion-4" data-id="4">
         <figure class="foto"><img src="assets/img/products/love-potion.png"></figure>
         <h2>Love Potion - <span>$29.99</span></h2>
       </div>
-      <div class="coluna" id="potion-5">
+      <div class="coluna" id="potion-5" data-id="5">
         <figure class="foto"><img src="assets/img/products/polyjuice-potion.png"></figure>
         <h2>Polyjuici potion - <span >$99.99</span></h2>
       </div>
-      <div class="coluna" id="potion-6">
+      <div class="coluna" id="potion-6" data-id="6">
         <figure class="foto"><img src="assets/img/products/sleeping-draught.png"></figure>
         <h2>Sleeping Draught - <span >$14.99</span></h2>
       </div>
@@ -159,38 +158,62 @@ Divirta-se! :)
         <div id="fade" class="overlay">
         </div>
 
-  <footer class="footer">
-    <div class="footer-links">
-      <ul>
-        <li><a href="#">COMPANY</a></li>
-        <li><a href="#">CONTACT US</a></li>
-        <li><a href="#">SHIPPING</a></li>
-        <li><a href="#">RETURNS</a></li>
-        <li><a href="#">CAREERS</a></li>
-      </ul>
-    </div>
-    <div class="right-footer">
-      <div class="newsletter-form">
-        <p class="form-p">Sign up for our Newsletter</p>
-        <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
-        <input type="email" name="email" placeholder="Enter your email">
-        <button  class="btn" type="submit">Submit</button>
-      </div>
-    </div>
-    <div class="social-links">
-      <ul>
-        <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
-        <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
-        <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
-        <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
-        <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
-      </ul>
-    </div>
-    <div class="direitos">
-      <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
-    </div>
-  </footer>
-</div>
+        <footer class="footer">
 
-</body>
-</html>
+          <!-- footer desktop -->
+          <div class="footer-links mobile-hide">
+            <ul>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#">SHIPPING</a></li>
+              <li><a href="#">RETURNS</a></li>
+              <li><a href="#">CAREERS</a></li>
+            </ul>
+          </div>
+          <div class="right-footer mobile-hide">
+            <div class="newsletter-form">
+              <p class="form-p">Sign up for our Newsletter</p>
+              <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
+              <input type="email" name="email" placeholder="Enter your email">
+              <button  class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+          <div class="social-links mobile-hide">
+            <ul>
+              <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
+              <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
+              <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
+              <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
+            </ul>
+          </div>
+          <div class="direitos mobile-hide">
+            <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
+          </div>
+
+          <!-- footer mobile -->
+          <div class="right-footer desktop-hide">
+            <div class="newsletter-form">
+              <p class="form-p">Sign up for our Newsletter</p>
+              <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
+              <input type="email" name="email" placeholder="Enter your email">
+              <button  class="btn" type="submit">Submit</button>
+            </div>
+          </div>
+          <div class="social-links desktop-hide">
+            <ul>
+              <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
+              <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
+              <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
+              <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
+              <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
+            </ul>
+          </div>
+          <div class="direitos desktop-hide">
+              <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
+          </div>
+        </footer>
+      </div>
+
+      </body>
+      </html>
