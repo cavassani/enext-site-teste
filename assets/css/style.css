@@ -401,6 +401,50 @@ p {
   text-decoration: none;
 }
 
+/* ==========================================================================
+   Lightbox
+   ========================================================================== */
+.overlay {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            top: 12%;
+            left: 25%;
+            width: 50%;
+            height: 80%;
+            padding: 5px 10px 10px 10px;
+            border: 1px solid #C5D1E2;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+        }
+        .close-x {
+          float: right;
+
+        }
+        .light-img {
+          float: left;
+          width: 50%;
+
+        }
+
+        .potion-content{
+          float: right;
+          width: 50%;
+        }
 
 /* ==========================================================================
    Media Queries
@@ -557,7 +601,7 @@ p {
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
 
-  }
+
   .coluna {
     width: 50%;
     margin-right: 0;

@@ -20,6 +20,20 @@ Divirta-se! :)
 
   <script type="text/javascript" src="assets/potions.json"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+
+    function Abrir()
+    {
+      document.getElementById('light').style.display= 'block';
+      document.getElementById('fade').style.display='block';
+    }
+
+    function Fechar()
+    {
+      document.getElementById('light').style.display='none';
+      document.getElementById('fade').style.display='none';
+    }
+  </script>
 </head>
 
 <body onload "load()">
@@ -95,10 +109,9 @@ Divirta-se! :)
     </nav>
   </div>
 
-
-
   <section class="principal">
     <h1 id="potions-main-title">Potions</p>
+
       <div class="coluna" id="potion-1">
         <figure class="foto"><img src="assets/img/products/aging-potion.png"></figure>
         <h2>Aging Potion - <span >$29.99</span></h2>
@@ -127,6 +140,24 @@ Divirta-se! :)
         <h2>Sleeping Draught - <span >$14.99</span></h2>
       </div>
       </section>
+
+
+ <p>
+            Clique <a href="javascript:void(0)" onclick="Abrir();">aqui</a>
+        </p>
+        <div id="light" class="content">
+          <div class="close-x">
+            <a href="javascript:void(0)" onclick="Fechar();">  <img src="assets/img/close.png" height="14" width="7"></a>
+          </div>
+          <div class="light-img">
+
+          </div>
+          <div class="potion-content">
+
+          </div>
+        </div>
+        <div id="fade" class="overlay">
+        </div>
 
   <footer class="footer">
     <div class="footer-links">

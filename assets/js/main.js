@@ -16,11 +16,8 @@ function loadJSON(callback) {
 
 
 loadJSON(function(response) {
-console.log(response);
-
     jsonresponse = JSON.parse(response);
 
-
-    console.log(jsonresponse);
+    console.log(jsonresponse.potions);
 
 });
