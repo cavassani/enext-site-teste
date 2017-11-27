@@ -9,12 +9,13 @@ E-mail:    marceloscavassani@gmail.com
 Divirta-se! :)
 
 -->
+
 <head>
   <meta charset="UTF-8">
   <title>ENEXT teste</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans" />
 
@@ -22,212 +23,213 @@ Divirta-se! :)
 </head>
 
 <body onload "load()">
-<div class=" clearfix ">
-  <header class="header">
-    <div class="header-left mobile-hide">
-      <img src="assets/img/logo.png" alt="Logo" class="logo">
-    </div>
+  <div class=" clearfix ">
+    <header class="header">
+      <div class="header-left mobile-hide">
+        <img src="assets/img/logo.png" alt="Logo" class="logo">
+      </div>
       <div class="header-right mobile-hide">
-      <div class="search">
-        <input type="text" name="search" placeholder="Search our stock">
-      </div>
-      <div class="text-shipping mobile-hide">
-        <p class="free-ship-1">Free Shipping</p>
-        <p class="free-ship-2">on orders over $50</p>
-      </div>
-      <div class="caldron mobile-hide">
-        <img  src="assets/img/caldron.png" alt="">
-        <div class="caldron-text mobile-hide">
-          <p class="bag-text">BAG:</p>
-          <p class="bag-qt-item">1</p>
+        <div class="search">
+          <input type="text" name="search" placeholder="Search our stock">
+        </div>
+        <div class="text-shipping mobile-hide">
+          <p class="free-ship-1">Free Shipping</p>
+          <p class="free-ship-2">on orders over $50</p>
+        </div>
+        <div class="caldron mobile-hide">
+          <img src="assets/img/caldron.png" alt="">
+          <div class="caldron-text mobile-hide">
+            <p class="bag-text">BAG:</p>
+            <p class="bag-qt-item">1</p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!--  navbar mobile -->
-    <div class="bar-father desktop-hide">
-      <div class="navbar-mobile">
-        <nav id="menu-mobile">
-          <ul>
-            <li>
-              <div class="hambuguer" onclick="hamburguerMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </li>
-            <li id="logo-mobile">
-              <a>
+      <!--  navbar mobile -->
+      <div class="bar-father desktop-hide">
+        <div class="navbar-mobile">
+          <nav id="menu-mobile">
+            <ul>
+              <li>
+                <div class="hambuguer" onclick="hamburguerMenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </li>
+              <li id="logo-mobile">
+                <a>
                 <img src="assets/img/logo-mobile.png" alt="">
             </a>
-            </li>
-             <li>
-              <input type="text" id="mobile-search-nav"  class="mobile-search-nav" name="" value="">
-            </li>
-             <li id="caldron-mobile">
+              </li>
+              <li>
+                <input type="text" id="mobile-search-nav" class="mobile-search-nav" name="" value="">
+              </li>
+              <li id="caldron-mobile">
                 <img src="assets/img/caldron-mobile.png" alt="">
                 <h3 id="bag-mobile">BAG:<span>1</span></h3>
-            </li>
-          </ul>
-        </nav>
-        <h2  id="free-shipping-mobile" class="free-shipping-mobile">Free shipping on orders over $50</h2>
-    </div>
+              </li>
+            </ul>
+          </nav>
+          <h2 id="free-shipping-mobile" class="free-shipping-mobile">Free shipping on orders over $50</h2>
+        </div>
 
-    <div id="nav-list" class="nav-list">
-      <nav id="list-mobile">
+        <div id="nav-list" class="nav-list">
+          <nav id="list-mobile">
+            <ul>
+              <li class="li-dropdown-mobile"><a href="#">Potions</a></li>
+              <li class="li-dropdown-mobile"><a href="#">Ingredients</a></li>
+              <li class="li-dropdown-mobile"><a href="#">Books</a></li>
+              <li class="li-dropdown-mobile"><a href="#">Supplies</a></li>
+              <li class="li-dropdown-mobile"><a href="#">Charms</a></li>
+              <li class="li-selected-mobile"><a href="#">Clearance!</a></li>
+              <li class="sign-in-mobile"><a id="a-sigin" href="#">Sign In <span>or</span> Sign Up</a></li>
+
+            </ul>
+          </nav>
+          </nav>
+
+        </div>
+
+      </div>
+    </header>
+    <div class="navbar mobile-hide">
+      <nav class="menu">
         <ul>
-          <li class="li-dropdown-mobile"><a href="#">Potions</a></li>
-          <li class="li-dropdown-mobile"><a href="#">Ingredients</a></li>
-          <li class="li-dropdown-mobile"><a href="#">Books</a></li>
-          <li class="li-dropdown-mobile"><a href="#">Supplies</a></li>
-          <li class="li-dropdown-mobile"><a href="#">Charms</a></li>
-          <li class="li-selected-mobile"><a href="#">Clearance!</a></li>
-          <li class="sign-in-mobile"><a id="a-sigin" href="#">Sign In <span>or</span> Sign Up</a></li>
-
+          <li class="li-dropdown"><a href="#">Potions</a></li>
+          <li class="li-dropdown"><a href="#">Ingredients</a></li>
+          <li class="li-dropdown"><a href="#">Books</a></li>
+          <li class="li-dropdown"><a href="#">Supplies</a></li>
+          <li class="li-dropdown"><a href="#">Charms</a></li>
+          <li class="li-selected"><a href="#">Clearance!</a></li>
+          <li class="sign-in"><a a href="#">Sign In</a></li>
+          <li id="or">or</li>
+          <li class="sign-up"><a href="#"> Sign Up</a></li>
         </ul>
       </nav>
-      </nav>
-
     </div>
 
-    </div>
-  </header>
-  <div class="navbar mobile-hide">
-    <nav class="menu">
-      <ul>
-        <li class="li-dropdown"><a href="#">Potions</a></li>
-        <li class="li-dropdown"><a href="#">Ingredients</a></li>
-        <li class="li-dropdown"><a href="#">Books</a></li>
-        <li class="li-dropdown"><a href="#">Supplies</a></li>
-        <li class="li-dropdown"><a href="#">Charms</a></li>
-        <li class="li-selected"><a href="#">Clearance!</a></li>
-        <li class="sign-in"><a a href="#">Sign In</a></li>
-        <li id="or">or</li>
-        <li class="sign-up"><a href="#"> Sign Up</a></li>
-      </ul>
-    </nav>
-  </div>
+    <section class="principal">
+      <h1 id="potions-main-title">Potions</h1>
 
-  <section class="principal">
-    <h1 id="potions-main-title">Potions</h1>
-
-      <div class="coluna" id="potion-1" >
-        <a href="javascript:void(0)"  data-id="1" onclick="openLightbox(this.dataset.id);">
+      <div class="coluna" id="potion-1">
+        <a href="javascript:void(0)" data-id="1" onclick="openLightbox(this.dataset.id);">
           <figure class="foto"><img src="assets/img/products/aging-potion.png"></figure>
         </a>
-          <h2>Aging Potion - <span >$29.99</span></h2>
+        <h2>Aging Potion - <span >$29.99</span></h2>
 
 
       </div>
 
-      <div class="coluna" id="potion-2" >
-          <a href="javascript:void(0)"  data-id="2" onclick="openLightbox(this.dataset.id);">
-        <figure class="foto"><img src="assets/img/products/bulgeye-potion.png"></figure>
-      </a>
+      <div class="coluna" id="potion-2">
+        <a href="javascript:void(0)" data-id="2" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/bulgeye-potion.png"></figure>
+        </a>
 
         <h2>Bulgeye Potion - <span >$19.99</span></h2>
       </div>
 
       <div class="coluna" id="potion-3" data-id="3">
-          <a href="javascript:void(0)"  data-id="3" onclick="openLightbox(this.dataset.id);">
-        <figure class="foto"><img src="assets/img/products/dragon-tonic.png"></figure>
-      </a>
+        <a href="javascript:void(0)" data-id="3" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/dragon-tonic.png"></figure>
+        </a>
 
         <h2>Dragon Tonic - <span >$64.99</span></h2>
       </div>
 
       <div class="coluna" id="potion-4" data-id="4">
-          <a href="javascript:void(0)"  data-id="4" onclick="openLightbox(this.dataset.id);">
-        <figure class="foto"><img src="assets/img/products/love-potion.png"></figure>
-      </a>
+        <a href="javascript:void(0)" data-id="4" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/love-potion.png"></figure>
+        </a>
 
         <h2>Love Potion - <span>$29.99</span></h2>
       </div>
-      <div class="coluna" id="potion-5" >
-          <a href="javascript:void(0)"  data-id="5" onclick="openLightbox(this.dataset.id);">
-        <figure class="foto"><img src="assets/img/products/polyjuice-potion.png"></figure>
-      </a>
+      <div class="coluna" id="potion-5">
+        <a href="javascript:void(0)" data-id="5" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/polyjuice-potion.png"></figure>
+        </a>
         <h2>Polyjuici potion - <span >$99.99</span></h2>
       </div>
-      <div class="coluna" id="potion-6" >
-          <a href="javascript:void(0)"  data-id="6" onclick="openLightbox(this.dataset.id);">
-        <figure class="foto"><img src="assets/img/products/sleeping-draught.png"></figure>
-      </a>
+      <div class="coluna" id="potion-6">
+        <a href="javascript:void(0)" data-id="6" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/sleeping-draught.png"></figure>
+        </a>
 
         <h2>Sleeping Draught - <span >$14.99</span></h2>
       </div>
-      </section>
+    </section>
 
-        <div id="light" class="content">
-          <div class="close-x">
-            <a href="javascript:void(0)" onclick="closelightbox();">  <img src="assets/img/close.png" height="14" width="7"></a>
-          </div>
-          <div id="light-img" class="light-img">
+    <div id="light" class="content">
+      <div class="close-x">
+        <a href="javascript:void(0)" onclick="closelightbox();">  <img src="assets/img/close.png" height="14" width="7"></a>
+      </div>
+      <div id="light-img" class="light-img">
 
-          </div>
-          <div id="potion-content" class="potion-content">
+      </div>
+      <div id="potion-content" class="potion-content">
 
-          </div>
+      </div>
+    </div>
+    <div id="fade" class="overlay">
+    </div>
+
+    <footer class="footer">
+
+      <!-- footer desktop -->
+      <div class="footer-links mobile-hide">
+        <ul>
+          <li><a href="#">COMPANY</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="#">SHIPPING</a></li>
+          <li><a href="#">RETURNS</a></li>
+          <li><a href="#">CAREERS</a></li>
+        </ul>
+      </div>
+      <div class="right-footer mobile-hide">
+        <div class="newsletter-form">
+          <p class="form-p">Sign up for our Newsletter</p>
+          <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
+          <input type="email" name="email" placeholder="Enter your email">
+          <button class="btn" type="submit">Submit</button>
         </div>
-        <div id="fade" class="overlay">
-        </div>
-
-        <footer class="footer">
-
-          <!-- footer desktop -->
-          <div class="footer-links mobile-hide">
-            <ul>
-              <li><a href="#">COMPANY</a></li>
-              <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">SHIPPING</a></li>
-              <li><a href="#">RETURNS</a></li>
-              <li><a href="#">CAREERS</a></li>
-            </ul>
-          </div>
-          <div class="right-footer mobile-hide">
-            <div class="newsletter-form">
-              <p class="form-p">Sign up for our Newsletter</p>
-              <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
-              <input type="email" name="email" placeholder="Enter your email">
-              <button  class="btn" type="submit">Submit</button>
-            </div>
-          </div>
-          <div class="social-links mobile-hide">
-            <ul>
-              <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
-              <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
-              <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
-              <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
-              <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
-            </ul>
-          </div>
-          <div class="direitos mobile-hide">
-            <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
-          </div>
-
-          <!-- footer mobile -->
-          <div class="right-footer desktop-hide">
-            <div class="newsletter-form">
-              <p class="form-p">Sign up for our Newsletter</p>
-              <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
-              <input type="email" name="email" placeholder="Enter your email">
-              <button  class="btn" type="submit">Submit</button>
-            </div>
-          </div>
-          <div class="social-links desktop-hide">
-            <ul>
-              <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
-              <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
-              <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
-              <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
-              <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
-            </ul>
-          </div>
-          <div class="direitos desktop-hide">
-              <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
-          </div>
-        </footer>
+      </div>
+      <div class="social-links mobile-hide">
+        <ul>
+          <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
+          <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
+          <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
+        </ul>
+      </div>
+      <div class="direitos mobile-hide">
+        <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
       </div>
 
-      </body>
-      </html>
+      <!-- footer mobile -->
+      <div class="right-footer desktop-hide">
+        <div class="newsletter-form">
+          <p class="form-p">Sign up for our Newsletter</p>
+          <p class="form-p" id="p-2">Sign up for our newsletter & get exclusive discounts!</p>
+          <input type="email" name="email" placeholder="Enter your email">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+      </div>
+      <div class="social-links desktop-hide">
+        <ul>
+          <li><a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="assets/img/pinterest-icon.png" alt="Pinterest"></a></li>
+          <li><a href="#"><img src="assets/img/tumblr-icon.png" alt="Tumblr"></a></li>
+          <li><a href="#"><img src="assets/img/gplus-icon.png" alt="Google+"></a></li>
+        </ul>
+      </div>
+      <div class="direitos desktop-hide">
+        <p>&copy; 2015 Merlin's Potions. All Rights Reserved </p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
