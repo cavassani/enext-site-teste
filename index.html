@@ -50,28 +50,43 @@ Divirta-se! :)
         <nav id="menu-mobile">
           <ul>
             <li>
-              <div class="hambuguer" onclick="hamburguerMenu( this )">
+              <div class="hambuguer" onclick="hamburguerMenu(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
               </div>
             </li>
-            <li>
+            <li id="logo-mobile">
               <a>
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/logo-mobile.png" alt="">
             </a>
             </li>
              <li>
-              <input type="text" name="" value="">
+              <input type="text" id="mobile-search-nav"  class="mobile-search-nav" name="" value="">
             </li>
-             <li>
-              <div class="">
-                <img src="assets/img/caldron.png" alt="">
-                <p>BAG:<span>1</span></p>
-              </div>
+             <li id="caldron-mobile">
+                <img src="assets/img/caldron-mobile.png" alt="">
+                <h3 id="bag-mobile">BAG:<span>1</span></h3>
             </li>
           </ul>
         </nav>
+        <h2  id="free-shipping-mobile" class="free-shipping-mobile">Free shipping on orders over $50</h2>
+    </div>
+
+    <div id="nav-list" class="nav-list">
+      <nav id="list-mobile">
+        <ul>
+          <li class="li-dropdown-mobile"><a href="#">Potions</a></li>
+          <li class="li-dropdown-mobile"><a href="#">Ingredients</a></li>
+          <li class="li-dropdown-mobile"><a href="#">Books</a></li>
+          <li class="li-dropdown-mobile"><a href="#">Supplies</a></li>
+          <li class="li-dropdown-mobile"><a href="#">Charms</a></li>
+          <li class="li-selected-mobile"><a href="#">Clearance!</a></li>
+          <li class="sign-in-mobile"><a id="a-sigin" href="#">Sign In <span>or</span> Sign Up</a></li>
+
+        </ul>
+      </nav>
+      </nav>
 
     </div>
 
@@ -94,7 +109,7 @@ Divirta-se! :)
   </div>
 
   <section class="principal">
-    <h1 id="potions-main-title">Potions</p>
+    <h1 id="potions-main-title">Potions</h1>
 
       <div class="coluna" id="potion-1" >
         <a href="javascript:void(0)"  data-id="1" onclick="openLightbox(this.dataset.id);">
