@@ -18,22 +18,7 @@ Divirta-se! :)
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Droid+Sans" />
 
-  <script type="text/javascript" src="assets/potions.json"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript">
-
-    function Abrir()
-    {
-      document.getElementById('light').style.display= 'block';
-      document.getElementById('fade').style.display='block';
-    }
-
-    function Fechar()
-    {
-      document.getElementById('light').style.display='none';
-      document.getElementById('fade').style.display='none';
-    }
-  </script>
 </head>
 
 <body onload "load()">
@@ -111,47 +96,61 @@ Divirta-se! :)
   <section class="principal">
     <h1 id="potions-main-title">Potions</p>
 
-      <div class="coluna" id="potion-1" data-id="1">
-        <figure class="foto"><img src="assets/img/products/aging-potion.png"></figure>
-        <h2>Aging Potion - <span >$29.99</span></h2>
+      <div class="coluna" id="potion-1" >
+        <a href="javascript:void(0)"  data-id="1" onclick="openLightbox(this.dataset.id);">
+          <figure class="foto"><img src="assets/img/products/aging-potion.png"></figure>
+        </a>
+          <h2>Aging Potion - <span >$29.99</span></h2>
+
+
       </div>
 
-      <div class="coluna" id="potion-2" data-id="2">
+      <div class="coluna" id="potion-2" >
+          <a href="javascript:void(0)"  data-id="2" onclick="openLightbox(this.dataset.id);">
         <figure class="foto"><img src="assets/img/products/bulgeye-potion.png"></figure>
+      </a>
+
         <h2>Bulgeye Potion - <span >$19.99</span></h2>
       </div>
 
       <div class="coluna" id="potion-3" data-id="3">
+          <a href="javascript:void(0)"  data-id="3" onclick="openLightbox(this.dataset.id);">
         <figure class="foto"><img src="assets/img/products/dragon-tonic.png"></figure>
+      </a>
+
         <h2>Dragon Tonic - <span >$64.99</span></h2>
       </div>
 
       <div class="coluna" id="potion-4" data-id="4">
+          <a href="javascript:void(0)"  data-id="4" onclick="openLightbox(this.dataset.id);">
         <figure class="foto"><img src="assets/img/products/love-potion.png"></figure>
+      </a>
+
         <h2>Love Potion - <span>$29.99</span></h2>
       </div>
-      <div class="coluna" id="potion-5" data-id="5">
+      <div class="coluna" id="potion-5" >
+          <a href="javascript:void(0)"  data-id="5" onclick="openLightbox(this.dataset.id);">
         <figure class="foto"><img src="assets/img/products/polyjuice-potion.png"></figure>
+      </a>
         <h2>Polyjuici potion - <span >$99.99</span></h2>
       </div>
-      <div class="coluna" id="potion-6" data-id="6">
+      <div class="coluna" id="potion-6" >
+          <a href="javascript:void(0)"  data-id="6" onclick="openLightbox(this.dataset.id);">
         <figure class="foto"><img src="assets/img/products/sleeping-draught.png"></figure>
+      </a>
+
         <h2>Sleeping Draught - <span >$14.99</span></h2>
       </div>
       </section>
 
-
- <p>
-            Clique <a href="javascript:void(0)" onclick="Abrir();">aqui</a>
-        </p>
         <div id="light" class="content">
           <div class="close-x">
-            <a href="javascript:void(0)" onclick="Fechar();">  <img src="assets/img/close.png" height="14" width="7"></a>
+            <a href="javascript:void(0)" onclick="closelightbox();">  <img src="assets/img/close.png" height="14" width="7"></a>
           </div>
-          <div class="light-img">
+          <div id="light-img" class="light-img">
 
           </div>
-          <div class="potion-content">
+          <div id="potion-content" class="potion-content">
 
           </div>
         </div>

@@ -27,7 +27,7 @@ body {
 a {
     color: #00ccff;
     text-decoration: none;
-    font-size: 1.6em;
+    /*font-size: 1.6em;*/
 }
 
 a:hover {
@@ -169,6 +169,7 @@ embed {
   color:white;
   margin-left: 25px;
   font-style: italic;
+  font-size: 1.6em;
 }
 
 .li-dropdown a:after{
@@ -244,6 +245,7 @@ h1  {
 .principal h1 {
   margin-left: 60px;
 }
+
 .coluna {
     /*width: 23.404255319149%; /* 264px / 1128px */
     width: 30% ;
@@ -474,33 +476,35 @@ p {
             filter: alpha(opacity=80);
         }
 
-        .content {
-            display: none;
-            position: fixed;
-            top: 12%;
-            left: 25%;
-            width: 50%;
-            height: 80%;
-            padding: 5px 10px 10px 10px;
-            border: 1px solid #C5D1E2;
-            background-color: white;
-            z-index: 1002;
-            overflow: auto;
-        }
-        .close-x {
-          float: right;
+.content {
+    display: none;
+    position: fixed;
+    top: 12%;
+    left: 25%;
+    width: 50%;
+    height: 80%;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #C5D1E2;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+.close-x {
+  float: right;
 
-        }
-        .light-img {
-          float: left;
-          width: 50%;
+}
+.light-img {
+  float: left;
+  width: 50%;
 
-        }
+}
 
-        .potion-content{
-          float: right;
-          width: 50%;
-        }
+.potion-content{
+  float: right;
+  width: 50%;
+}
+ul#ingredients-list{list-style-position: inside}
+li.ingredient{list-style:none; padding:5px;}
 
 /* ==========================================================================
    Media Queries
